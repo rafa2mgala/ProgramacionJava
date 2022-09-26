@@ -1,6 +1,7 @@
 package dam.temauno.variables;
 /**
  * Identificadores de variables
+ * Propuestas de solución para las actividades 1.2 y 1.3
  * @author rafa
  * @version 1.0
  *
@@ -8,6 +9,22 @@ package dam.temauno.variables;
 public class Identificadores {
 
 	public static void main(String[] args) {
+		//Propuesta de solución para la actividad 1.2
+		//---------------------------------------------------------------------------------
+		//El número de calles de una ciudad. = Simple (numérico)
+		//La distancia entre dos planetas. = Simple (numérico)
+		//El río más largo del mundo. = Simple (cadena de caracteres)
+		//El número de puertas de un edificio. = Simple (numérico)
+		//El estado de una puerta (abierta o cerrada). = Simple (boolean)
+		//El número de patas de una araña. = Simple (numérico)
+		//La tercera letra del alfabeto griego. = Simple (char)
+		//El color de un semáforo (rojo, amarillo o verde). = Simple (cadena de caracteres o numérico)
+		//La dirección de una casa. = Compuesto (calle (cadena de caracteres), número 
+		//(numérico), letra (carácter))
+
+
+		//Propuesta de solución para la actividad 1.3
+		//---------------------------------------------------------------------------------
 		String apellido2; //correcto
 		String APELLIDO DOS; //incorrecto, tiene espacio
 		String 2Apellido; //incorrecto, empieza por número
@@ -34,6 +51,6 @@ public class Identificadores {
 		String SÍ; //correcto
 		String z; //correcto
 		String e; //correcto
-		String _; //incorrecto
+		String _; //incorrecto	
 	}
 }
