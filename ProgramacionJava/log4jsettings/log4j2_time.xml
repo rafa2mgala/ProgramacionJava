@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+	<Properties>
+		<Property name="basePath">/home/rafa/temp/logs</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="RollingFile">
+			<FileName>${basePath}/roll-by-time/mylogtime.log</FileName>
+			<FilePattern>${basePath}/roll-by-time/%d{yyyy-MM-dd-hh-mm}.log
+			</FilePattern>
+			<PatternLayout>
+				<Pattern>%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} -
+					%m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<!-- Regla de creación de cada nuevo fichero, cada 1 unidad de tiempo -->
+				<TimeBasedTriggeringPolicy interval="1" />
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="dam.tematres.examen.exlog" level="debug" additivity="false">
+			<AppenderRef ref="RollingFile" />
+		</Logger>
+	</Loggers>
+</Configuration>

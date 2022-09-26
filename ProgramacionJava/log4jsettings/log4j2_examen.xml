@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+	<Appenders>
+		<!-- Console Appender -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="Consola:%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<!-- Rolling File Appender -->
+		<RollingFile name="RollingFile">
+			<FileName>/home/rafa/temp/logs/roll-by-time/mylogtime.log</FileName>
+			<FilePattern>/home/rafa/temp/logs/roll-by-time/%d{yyyy-MM-dd-hh-mm}.log
+			</FilePattern>
+			<PatternLayout>
+				<Pattern>%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} -
+					%m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<!-- Regla de creación de cada nuevo fichero, cada 1 unidad de tiempo -->
+				<TimeBasedTriggeringPolicy interval="1" />
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="dam.tematres.examen.exlog" level="debug" additivity="false">
+			<AppenderRef ref="RollingFile" />
+		</Logger>
+		<Logger name="dam.tematres.examen.exlog.console" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+	</Loggers>
+</Configuration>

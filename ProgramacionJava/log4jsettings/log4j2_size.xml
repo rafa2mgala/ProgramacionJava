@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+		<Property name="basePath">/home/rafa/temp/logs</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="rollBySize">
+			<FileName>${basePath}/roll-by-size/mylogsize.log</FileName>
+			<FilePattern>${basePath}/roll-by-size/mylog-%i.log
+			</FilePattern>
+			<PatternLayout>
+				<Pattern>%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} -
+					%m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<!-- Regla de creación de cada nuevo fichero, 
+				cada vez que se supere 1KB de tamaño -->
+				<SizeBasedTriggeringPolicy size="128 B" />
+			</Policies>
+			<DefaultRolloverStrategy max="5"/>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="dam.tematres.logapache" level="debug" additivity="false">
+			<AppenderRef ref="rollBySize" />
+		</Logger>
+	</Loggers>
+</Configuration>

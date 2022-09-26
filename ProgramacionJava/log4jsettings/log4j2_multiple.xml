@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+	<Appenders>
+		<!-- Console Appender -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="Consola:%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<!-- Rolling File Appender -->
+		<RollingFile name="RollingFile">
+			<FileName>/home/rafa/temp/logs/roll-by-time/multiple/mylog.log</FileName>
+			<FilePattern>/home/rafa/temp/logs/roll-by-time/multiple/%d{yyyy-MM-dd-hh-mm}.log
+			</FilePattern>
+			<PatternLayout>
+				<Pattern>Fichero: %d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} -
+					%m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="2" />
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="dam.tematres.logapache.ficheros" level="debug" additivity="false">
+			<AppenderRef ref="RollingFile" />
+		</Logger>
+		<Logger name="dam.tematres.logapache" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+	</Loggers>
+</Configuration>
