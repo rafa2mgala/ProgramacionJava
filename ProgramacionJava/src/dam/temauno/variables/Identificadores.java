@@ -51,6 +51,6 @@ public class Identificadores {
 		String SÍ; //correcto
 		String z; //correcto
 		String e; //correcto
-		String _; //incorrecto	
+		String _; //incorrecto porque se usa en las expresiones lambda a partir de Java 9
 	}
 }
