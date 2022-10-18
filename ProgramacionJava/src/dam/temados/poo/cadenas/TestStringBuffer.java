@@ -46,6 +46,5 @@ public class TestStringBuffer {
 		System.out.println(sbDos.capacity());
 		
 		sc.close();
-	
 	}
 }
