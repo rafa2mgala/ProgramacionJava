@@ -8,9 +8,10 @@ import java.io.IOException;
  * @version 1.0
  */
 public class GiraLinea {
-	public static void main(String[] args) {		
+	public static void main(String[] args) {
+		int veces = 10;
 		GiraLinea gl = new GiraLinea();
-		while(true) {
+		while(veces>0) {
 			//línea horizontal
 			for(int i=0;i<5;i++) {
 				if(i<5/2) System.out.println();
@@ -57,6 +58,9 @@ public class GiraLinea {
 				System.out.println();
 			}
 			gl.esperarUnSegundo();
+			//decremento la variable de control del bucle while
+			//para garantizar que el bucle termina
+			veces--;
 		}
 	}
 	private void esperarUnSegundo() {
