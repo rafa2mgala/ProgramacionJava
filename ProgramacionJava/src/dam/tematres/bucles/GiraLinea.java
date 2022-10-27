@@ -4,6 +4,11 @@ import java.io.IOException;
 /**
  * Gira una línea en el sentido del reloj creada con 
  * el símbolo *. Ejemplo de bucles for anidados
+ * ATENCIÓN: para poder ver bien el efecto de giro es
+ * necesario que el panel de la consola tenga una altura
+ * parecida a la altura ocupada por los 5 asteriscos en 
+ * posición vertical, sino no se apreciará que la línea
+ * gira en el sentido del reloj. Además cuando aparece por segunda vez
  * @author rafa
  * @version 1.0
  */
@@ -61,6 +66,7 @@ public class GiraLinea {
 			//decremento la variable de control del bucle while
 			//para garantizar que el bucle termina
 			veces--;
+			System.out.println();
 		}
 	}
 	private void esperarUnSegundo() {
