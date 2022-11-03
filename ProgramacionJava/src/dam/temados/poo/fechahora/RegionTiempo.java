@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * Ejemplo de uso de clases de fecha-hora
  * Instant, DateTimeFormatter, ZonedDateTime, LocalDateTime, etc
+ * Solución propuesta a la actividad 2.8
  * @author rafa
  * @version 1.0
  */
