@@ -7,7 +7,7 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.Scanner;
 /**
  * Ejemplo de uso de clases relacionadas con el formato
- * de fecha y hora
+ * de fecha y hora. Solución propuesta a la actividad 2.7
  * 
  * @author rafa
  * @version 1.0
