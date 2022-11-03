@@ -5,7 +5,6 @@ import java.util.StringTokenizer;
  * Solución propuesta para la actividad 2.5
  * @author rafa
  * @version 1.0
- *
  */
 public class TestAjedrez {
 
