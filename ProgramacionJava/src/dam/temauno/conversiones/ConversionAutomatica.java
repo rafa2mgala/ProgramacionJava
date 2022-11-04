@@ -45,7 +45,5 @@ public class ConversionAutomatica {
         by = (byte)(by * 2); 
         //Se produce una conversión automática de byte a cadena antes de mostrar el valor
         System.out.println(by);
-
 	}
-
 }
