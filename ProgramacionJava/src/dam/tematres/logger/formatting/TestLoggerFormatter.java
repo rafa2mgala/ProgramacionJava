@@ -36,9 +36,9 @@ public class TestLoggerFormatter {
 		//se obtiene el símbolo separador de carpetas y se construye
 		//la ruta del fichero de log
 	    String pathSymbol = System.getProperty("file.separator");
-	    String filePath="src/dam/tematres/logger/log.txt";
+	    String filePath="src/dam/tematres/logger/formatting/log.txt";
 	    if(pathSymbol.equals("\\")) {
-	    	filePath = "/src/dam/tematres/logger/log.txt".replaceAll("\\", 
+	    	filePath = "/src/dam/tematres/logger/formatting/log.txt".replaceAll("\\", 
 	    			pathSymbol).substring(2);
 	    }
 	    
