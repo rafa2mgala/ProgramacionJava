@@ -1,12 +1,12 @@
-package dam.tematres.condicionales;
+package dam.tematres.seleccion;
 
 import java.util.Scanner;
 
 /**
- * Solución propuesta a la actividad 3.8
- * Solicitar estacion y se indican los meses
- * que le corresponden
- * @author rafa
+ * Solución propuesta para la actividad 3.8
+ * A partir de la estación meteorológica se indican los meses
+ * correspondientes
+ * @author Rafa
  * @version 1.0
  */
 public class MesesEstacion {
@@ -14,7 +14,7 @@ public class MesesEstacion {
 	 * Este es el metodo principal, es el punto de entrada al programa donde el
 	 * usuario inserta datos de programa
 	 * 
-	 * @param args
+	 * @param args Parámetros de entrada en la llamada al programa
 	 */
 	public static void main(String[] args) {
 		// Instanciar objeto scanner para leer el numero
