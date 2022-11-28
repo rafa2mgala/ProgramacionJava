@@ -17,7 +17,7 @@ public class TresDecimales {
 		numDos = sc.nextDouble();
 		
 		System.out.println(numUno>numDos?"El número " + numUno +
-				" es mayor que " + numDos:numDos>numUno?"El número " +
+				" es mayor que " + numDos:Math.max(numUno, numDos)>numUno?"El número " +
 				numDos + " es mayor que " + numUno:"Los dos números " +
 				" introducidos son iguales");
 		
@@ -31,7 +31,7 @@ public class TresDecimales {
 				" redondeado es: " + Math.round(numUno) + 
 				" y el número " + numDos + " redondeado es: " +
 				Math.round(numDos) + ". El producto entre ambos es " +
-				Math.round(numUno) * Math.round(numDos));
+				Math.multiplyExact(Math.round(numUno),Math.round(numDos)));
 	}
 
 }
