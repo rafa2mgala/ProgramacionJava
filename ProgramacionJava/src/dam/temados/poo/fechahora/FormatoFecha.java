@@ -14,6 +14,7 @@ import java.util.Scanner;
  */
 public class FormatoFecha {
 	public static void main(String[] args) {
+		long inicio=0;
 		String fecha="";
 		Scanner in=new Scanner(System.in);
 
@@ -29,6 +30,8 @@ public class FormatoFecha {
 		//se lee la línea completa incluidos los espacios
 		fecha=in.nextLine();
 
+		inicio = System.currentTimeMillis();
+		
 		//se pasa la cadena a un objeto de tipo LocalDateTime
 		//se construye el objeto LocalDateTime con su formato original de entrada
 		DateTimeFormatter formato = DateTimeFormatter.ofPattern("d/MM/yyyy HH:mm:ss");
@@ -42,6 +45,11 @@ public class FormatoFecha {
 		//se aplica el formato Mes Día, Año
 		formato = DateTimeFormatter.ofPattern("MM dd, yyyy");
 		System.out.println( fechaHora.format(formato));
+		
+		//se muestra el tiempo transcurrido, en milisegundos, desde
+		//el comienzo del formateo hasta el final
+		System.out.println("Los formatos de fecha se han realizado en " +
+				(System.currentTimeMillis()-inicio) + " milisegundos");
 	}
 
 }
