@@ -10,7 +10,6 @@ import java.util.Scanner;
  * @since 1.0
  */
 public class Posicional {
-
 	public static void main(String[] args) {
 		int numero;
 
