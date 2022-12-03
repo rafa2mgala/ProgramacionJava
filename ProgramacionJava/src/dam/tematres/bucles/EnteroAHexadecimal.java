@@ -25,5 +25,6 @@ public class EnteroAHexadecimal {
 		}while((cociente /= 16)>=16);
 		hex.append(HEXADECIMAL.charAt(cociente));
 		System.out.println(hex.reverse());
+		in.close();
 	}
 }
