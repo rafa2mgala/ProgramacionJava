@@ -1,4 +1,4 @@
-package dam.temacuatro.miembros;
+package dam.temacuatro.empresa;
 /**
  * Empleado de la empresa, se pueden crear objetos de la clase
  * sólo con conocer el nombre del empleado

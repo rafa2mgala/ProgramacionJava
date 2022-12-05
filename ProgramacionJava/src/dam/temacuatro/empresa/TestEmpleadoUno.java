@@ -1,4 +1,4 @@
-package dam.temacuatro.actividades.soluciones;
+package dam.temacuatro.empresa;
 /**
  * Solución propuesta para la actividad 4.1
  * @author rafa
