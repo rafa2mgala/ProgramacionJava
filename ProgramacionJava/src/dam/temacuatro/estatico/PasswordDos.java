@@ -4,6 +4,11 @@ import java.util.Random;
 
 import org.eclipse.jdt.annotation.NonNull;
 /**
+ * Solución propuesta para la actividad 4.6. En esta clase se satisfacen los
+ * requisitos del enunciado y además se trabaja con constantes, constructores
+ * especializados, y métodos propios para distintas finalidades. Se incluyen
+ * como estáticos el método que genera la contraseña y el que comprueba la
+ * fortaleza de la misma.
  * 
  * @author Rafa
  * @version 1.1
@@ -130,13 +135,13 @@ public class PasswordDos {
 		}
 		return numCaps;
 	}
-	public int getLongitud() {
+	public int getLength() {
 		return length;
 	}
 	public String getPassword() {
 		return password;
 	}
-	public int getTipo() {
+	public int getType() {
 		return type;
 	}
 }
